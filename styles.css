@@ -1,0 +1,168 @@
+:root{
+    --color-gradient-1: #00e5d2;
+    --color-gradient-2: #0021a6;
+    --color-background: #2a2a2a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+}
+
+main{
+    height: 60%;
+    min-height: 600px;
+    width: 40%;
+    min-width: 400px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, var(--color-gradient-1), var(--color-gradient-2));
+}
+
+main .container{
+    height: 100%;
+    padding: 1rem;
+}
+
+main .container .city-input-section{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+main .container .city-input-section .city-input{
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    color: #2a2a2a;
+    background-color: hsla(0, 0%, 100%, 0.9);
+}
+
+main .container .city-input-section .input-button{
+    margin-left: 0.8rem;
+    padding: 10px 12px;
+    display: flex;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--color-background);
+    cursor: pointer;
+}
+
+main .container .city-weather{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .city-weather .city-temperature{
+    font-size: 3.8rem;
+    font-weight: 500;
+    transition: ease 0.5s;
+}
+main .container .city-weather .city-temperature:hover{
+    font-size: 4.2rem;
+}
+
+main .container .city-weather .city-forecast-image{
+    height: 30%;
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .city-weather .city-forecast-image img{
+    height: 12rem;
+}
+
+main .container .city-weather .city-name{
+    font-size: 2.4rem;
+}
+
+main .container .city-weather .city-weather-info{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 4px hsla(0, 0%, 100%, 0.2);
+}
+
+main .container .city-weather .city-weather-info .city-humidity{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+main .container .city-weather .city-weather-info .city-humidity .humidity{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+main .container .city-weather .city-weather-info .city-humidity .humidity span{
+margin: 0.2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.city-humidity img{
+    height: 2.4rem;
+}
+
+main .container .city-weather .city-weather-info .city-wind{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+main .container .city-weather .city-weather-info .city-wind .wind{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+main .container .city-weather .city-weather-info .city-wind .wind span{
+margin: 0.2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.city-wind img{
+    height: 2.4rem;
+  
+}

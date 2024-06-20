@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="city-input-section">
+                <input type="text" class="city-input" placeholder="Enter city name..." spellcheck="false">
+                <div class="input-button">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+            </div>
+            <div class="city-weather">
+                <div class="city-forecast-image">
+                    <img class="weather-forecast-image" src="assets/clear_weather.png">
+                </div>
+                <div class="city-temperature">0°c</div>
+                <div class="city-name">(Enter City)</div>
+                <div class="city-weather-info">
+                    <div class="city-humidity">
+                       <div class="humidity">
+                        <img src="assets/humidity.png">
+                            <span class="city-humidity-value">0</span>%
+                       </div>
+                       <h3>Humidity</h3>
+                    </div>
+                    <div class="city-wind">
+                        <div class="wind">
+                         <img src="assets/wind.png">
+                             <span class="city-wind-value">0</span>MPH
+                        </div>
+                        <h3>Wind</h3>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
